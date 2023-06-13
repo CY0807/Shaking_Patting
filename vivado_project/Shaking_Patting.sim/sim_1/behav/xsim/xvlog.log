@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github_repo/Shaking_Patting/source_code/SimTop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SimTop
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github_repo/Shaking_Patting/source_code/handshake_pipe_ready_patting.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module handshake_pipe_ready_patting
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github_repo/Shaking_Patting/source_code/master_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module master_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github_repo/Shaking_Patting/source_code/slave_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slave_interface
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github_repo/Shaking_Patting/source_code/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [D:/github_repo/Shaking_Patting/source_code/testbench.v:90]
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [D:/github_repo/Shaking_Patting/source_code/testbench.v:113]
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [D:/github_repo/Shaking_Patting/source_code/testbench.v:124]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/github_repo/Shaking_Patting/vivado_project/Shaking_Patting.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

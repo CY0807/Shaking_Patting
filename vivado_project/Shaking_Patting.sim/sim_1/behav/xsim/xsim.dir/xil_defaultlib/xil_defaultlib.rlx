@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/github_repo/Shaking_Patting/source_code/SimTop.v,1686666651,verilog,,D:/github_repo/Shaking_Patting/source_code/handshake_pipe_ready_patting.v,,SimTop,,,,,,,,
+D:/github_repo/Shaking_Patting/source_code/handshake_pipe_both_patting.v,1686664333,verilog,,D:/github_repo/Shaking_Patting/source_code/master_interface.v,,handshake_pipe_both_patting,,,,,,,,
+D:/github_repo/Shaking_Patting/source_code/handshake_pipe_no_patting.v,1686624880,verilog,,D:/github_repo/Shaking_Patting/source_code/master_interface.v,,handshake_pipe,,,,,,,,
+D:/github_repo/Shaking_Patting/source_code/handshake_pipe_ready_patting.v,1686665862,verilog,,D:/github_repo/Shaking_Patting/source_code/master_interface.v,,handshake_pipe_ready_patting,,,,,,,,
+D:/github_repo/Shaking_Patting/source_code/handshake_pipe_valid_patting.v,1686648111,verilog,,D:/github_repo/Shaking_Patting/source_code/master_interface.v,,handshake_pipe_valid_patting,,,,,,,,
+D:/github_repo/Shaking_Patting/source_code/master_interface.v,1686649499,verilog,,D:/github_repo/Shaking_Patting/source_code/slave_interface.v,,master_interface,,,,,,,,
+D:/github_repo/Shaking_Patting/source_code/slave_interface.v,1686643635,verilog,,D:/github_repo/Shaking_Patting/source_code/testbench.v,,slave_interface,,,,,,,,
+D:/github_repo/Shaking_Patting/source_code/testbench.v,1686666639,verilog,,,,testbench,,,,,,,,
+D:/github_repo/Shaking_Patting/vivado_project/Shaking_Patting.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
