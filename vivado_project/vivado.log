@@ -479,3 +479,4 @@ slave data:
 PASS
 
 $finish called at time : 1655 ns : File "D:/github_repo/Shaking_Patting/source_code/testbench.v" Line 131
+The simulator has terminated in an unexpected manner with exit code 1073807364.  Please review the simulation log (xsim.log) for details.
