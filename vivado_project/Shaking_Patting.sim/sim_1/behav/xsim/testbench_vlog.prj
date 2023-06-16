@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
 "../../../../../source_code/SimTop.v" \
-"../../../../../source_code/handshake_pipe_ready_patting.v" \
+"../../../../../source_code/handshake_pipe_valid_patting.v" \
 "../../../../../source_code/master_interface.v" \
 "../../../../../source_code/slave_interface.v" \
 "../../../../../source_code/testbench.v" \

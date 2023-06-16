@@ -11,46 +11,44 @@ module handshake_pipe_both_patting (
     input  wire slave_ready
     );
 
-    reg ready_reg;
-    reg valid_reg;
     reg [31:0] data0_reg, data1_reg;
-	reg [1:0] cnt_reg = 0;
-	
+	reg [1:0] valid_reg;
+
 	wire shake_master = master_valid & master_ready;
 	wire shake_slave = slave_valid & slave_ready;
 
+	assign master_ready = ~valid_reg[0];
+	assign slave_valid = valid_reg[1];
+	assign slave_data = data1_reg;
+
     always@(posedge clk or negedge rst_n) begin
 	    if(!rst_n) begin
-		    cnt_reg <= 2'd0;
+		    valid_reg <= 2'b00;
+			data0_reg <= 0;
+			data1_reg <= 0;
 		end
 		else if(shake_master & shake_slave) begin
-		    cnt_reg <= cnt_reg;
 			data1_reg <= master_data;
 		end
 	    else if(shake_master) begin
-		    cnt_reg <= cnt_reg + 1;
-			if(cnt_reg == 0) begin
+			if(valid_reg == 2'b00) begin
 			    data1_reg <= master_data;
+				valid_reg = 2'b10;
 			end
-			else begin
+			else if(valid_reg == 2'b10) begin
 			    data0_reg <= master_data;
+				valid_reg = 2'b11;
 			end
 		end
 		else if(shake_slave) begin
-		    cnt_reg <= cnt_reg - 1;
-			if(cnt_reg == 2) begin
+			if(valid_reg == 2'b11) begin
 			    data1_reg <= data0_reg;
+				valid_reg = 2'b10;
+			end
+			else if(valid_reg == 2'b10) begin
+				valid_reg = 2'b00;
 			end
 		end
 	end
-	
-	always@(posedge clk) begin
-	    ready_reg <= slave_ready;
-	end
-	
-	// cnt_reg = 1时两者才能并发，类似于conflict free fifo
-	assign master_ready = ready_reg & (cnt_reg<2);
-	assign slave_valid = cnt_reg>0;
-	assign slave_data = data1_reg;
     
 endmodule

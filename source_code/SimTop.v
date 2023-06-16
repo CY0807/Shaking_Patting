@@ -35,10 +35,10 @@ module SimTop (
     // handshake_pipe_no_patting handshake_pipe_inst (
 	
 	// 2. valid patting
-	// handshake_pipe_valid_patting handshake_pipe_inst (
+	 handshake_pipe_valid_patting handshake_pipe_inst (
 	
 	// 3. ready patting
-	 handshake_pipe_ready_patting handshake_pipe_inst (
+	// handshake_pipe_ready_patting handshake_pipe_inst (
 	
 	// 4. both patting
 	// handshake_pipe_both_patting handshake_pipe_inst (
